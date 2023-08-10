@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="./Css/all.min.css">
+  <link rel="stylesheet" href="./Css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container py-4">
+      <a class="navbar-brand" href="#">
+        <img src="./Images/logo@2x.png" class="w-35 pe-2">
+
+        <div class="logoContent">
+          <h1 class=""> Weather</h1>
+          <p>tagline goes here</p>
+        </div>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- <section class="WeatherBody">
+    <div class="container text-center">
+     <div class="inputContent">
+      <input type="text"  id="searchInput" placeholder="Find your location..." class="form-control " >
+      <input type="button"  value="find" id="findInput">
+     </div>
+    </div>
+
+
+
+   
+</section> -->
+
+  <div class="hero" style="background-image: url(&quot;images/banner.png&quot;);">
+    <div class="container">
+      <form class="find-location">
+        <input type="text" placeholder="Find your location..." id="searchInput">
+        <input type="button" value="Find" id="findInput">
+      </form>
+
+    </div>
+  </div>
+  <div class="forecast-table">
+    <div class="container">
+      <div class="forecast-container" id="forecast">
+        <div class="today forecast">
+          <div class="forecast-header" id="today">
+            <div class="day">Friday</div>
+            <div class=" date">11August</div>
+          </div> <!-- .forecast-header -->
+          <div class="forecast-content" id="current">
+            <div class="location">Cairo</div>
+            <div class="degree">
+              <div class="num">26<sup>o</sup>C</div>
+
+              <div class="forecast-icon">
+                <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="" width="90">
+              </div>
+
+            </div>
+            <div class="custom">Clear</div>
+            <span><img src="images/icon-umberella.png" alt="">20%</span>
+            <span><img src="images/icon-wind.png" alt="">18km/h</span>
+            <span><img src="images/icon-compass.png" alt="">East</span>
+          </div>
+        </div>
+        <div class="forecast">
+          <div class="forecast-header">
+            <div class="day">Saturday</div>
+          </div> <!-- .forecast-header -->
+          <div class="forecast-content">
+            <div class="forecast-icon">
+              <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+            </div>
+            <div class="degree">39.6<sup>o</sup>C</div>
+            <small>23.9<sup>o</sup></small>
+            <div class="custom">Sunny</div>
+          </div>
+        </div>
+        <div class="forecast">
+          <div class="forecast-header">
+            <div class="day">Sunday</div>
+          </div> <!-- .forecast-header -->
+          <div class="forecast-content">
+            <div class="forecast-icon">
+              <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+            </div>
+            <div class="degree">39.8<sup>o</sup>C</div>
+            <small>24.7<sup>o</sup></small>
+            <div class="custom">Sunny</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="WeatherContent ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        
+       
+        </div>
+    </div>
+  </div>
+
+</div> -->
+
+
+
+
+
+
+  <footer class="footerDiv py-5">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="footerInputs">
+            <input type="text" id="searchInput" placeholder="Enter your email to subscribe..." class="form-control ">
+            <input type="button" value="Subscribe" id="subscribeInput">
+          </div>
+        </div>
+
+        <div class="col-md-3 offset-md-1">
+          <div class="footerIcons">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+
+              <i class="fa-brands fa-twitter"></i>
+
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="py-4">
+        <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </div>
+
+
+  </footer>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/mine.js"></script>
+</body>
+
+</html>
